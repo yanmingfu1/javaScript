@@ -240,7 +240,7 @@
       <updated>1458262499335</updated>
       <workItem from="1502193717807" duration="597000" />
       <workItem from="1503661212835" duration="1382000" />
-      <workItem from="1503733738522" duration="446000" />
+      <workItem from="1503733738522" duration="452000" />
     </task>
     <task id="LOCAL-00001" summary="yjk">
       <created>1503733801899</created>
@@ -263,11 +263,18 @@
       <option name="project" value="LOCAL" />
       <updated>1503734182117</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="删除文件">
+      <created>1503734187131</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1503734187131</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2425000" />
+    <option name="totallyTimeSpent" value="2431000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
