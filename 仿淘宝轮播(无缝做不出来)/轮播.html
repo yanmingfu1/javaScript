@@ -92,6 +92,7 @@
 <script type="text/javascript">
     var timer;//定时器
     var i=0;//图片编号
+
 //    自动播放
     $('.content').hover(function(){
         clearInterval(timer);
@@ -109,6 +110,8 @@
             $('.picBox').stop(false,true).animate({marginLeft:-520*i+'px'},500);
         },1000);
     }).trigger('mouseleave');
+
+
 //    点击左右
     $('.left').on('click',function(){
        if(!$('.picBox').is(':animated')){
@@ -139,5 +142,6 @@
             $('.picBox').stop(false,true).animate({marginLeft:-520*picIndex+'px'},500);
         }
     });
+
 </script>
 </html>
