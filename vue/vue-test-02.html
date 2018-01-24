@@ -55,7 +55,7 @@
                     }
                     this.answer = 'Thinking...'
                     var vm = this
-                    axios.get('http://search.caixin.com/search/newSearch.jsp?callback=test')
+                    axios.prototype().get('http://search.caixin.com/search/newSearch.jsp?callback=test')
                         .then(function (response) {
                         vm.answer = response
                         })

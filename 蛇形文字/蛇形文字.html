@@ -18,23 +18,27 @@
             position:absolute;
             z-index:99;
         }
+
     </style>
 </head>
 <body>
-<input id="content" type="text" placeholder="请输入文字(多输点好看些)"/>
-<input id="btn" type="button" value="确定"/>
+    <div style="z-index: inherit;text-align: center;">
+        <input id="content" type="text" placeholder="请输入文字(多输点好看些)"/>
+        <input id="btn" type="button" value="确定"/>
+    </div>
+
 </body>
 <script type="text/javascript" src="js/jquery-1.8.3.js"></script>
 <script type="text/javascript">
-//    基本思想就是用数组中的前一个值替代后一个值,然后再赋给div当做坐标
-    $('#btn').on('click',function(){
-        var oText=$('#content').val();
-        var aText=oText.split('');
+    var aText;
+    $(function () {
+        var oText='I love you';
+        aText=oText.split('');
         var x=[];//存每个文字的x坐标
         var y=[];//存每个文字的y坐标
         var xSpace=25;//文字x轴偏移量
         var ySpace=45;//文字y轴偏移量
-        for(var i=0;i<aText.length;i++){
+        for(var i=1;i<aText.length;i++){
             x[i]=-50;
             y[i]=-50;
             $('body').append('<div class="move">'+aText[i]+'</div>');
@@ -51,6 +55,21 @@
             }
             $('.move').eq(0).css({left:x[0],top:y[0]});
         });
+    });
+    //    基本思想就是用数组中的前一个值替代后一个值,然后再赋给div当做坐标
+    $('#btn').on('click',function(){
+        var content=$('#content').val();
+        var arr=content.split('');
+        var x=[];//存每个文字的x坐标
+        var y=[];//存每个文字的y坐标
+        var xSpace=25;//文字x轴偏移量
+        var ySpace=45;//文字y轴偏移量
+        for(var i=0;i<arr.length;i++){
+            x[i]=-50;
+            y[i]=-50;
+            $('body').append('<div class="move">'+arr[i]+'</div>');
+        }
+        aText=$.merge(aText,arr);
     });
 </script>
 </html>
